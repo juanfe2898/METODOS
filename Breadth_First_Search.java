@@ -13,10 +13,10 @@ public class Breadth_First_Search {
 
   public static int[][] arr = new int[][] {
             {0,0,0,0,0,0,0,0,0},
-            {0,2,2,0,0,0,0,0,0},
-            {0,0,0,2,0,0,0,0,0},
-            {0,0,0,2,0,0,0,0,0},
-            {0,0,0,2,0,0,0,0,0},
+            {0,1,1,0,0,0,0,0,0},
+            {0,0,0,1,0,0,0,0,0},
+            {0,0,0,1,0,0,0,0,0},
+            {0,0,0,1,0,0,0,0,0},
             {0,0,0,0,0,9,0,0,0},
             {0,0,0,0,0,0,0,0,0},
             {0,0,0,0,0,0,0,0,0},
@@ -63,25 +63,25 @@ public class Breadth_First_Search {
             }
 
             if(libre(p.x+1,p.y)) {
-                arr[p.x][p.y] = -1;
+                arr[p.x][p.y] = 2;
                 puntos nextP = new puntos(p.x+1,p.y, p);
                 q.add(nextP);
             }
 
             if(libre(p.x-1,p.y)) {
-                arr[p.x][p.y] = -1;
+                arr[p.x][p.y] = 2;
                 puntos nextP = new puntos(p.x-1,p.y, p);
                 q.add(nextP);
             }
 
             if(libre(p.x,p.y+1)) {
-                arr[p.x][p.y] = -1;
+                arr[p.x][p.y] = 2;
                 puntos nextP = new puntos(p.x,p.y+1, p);
                 q.add(nextP);
             }
 
              if(libre(p.x,p.y-1)) {
-                arr[p.x][p.y] = -1;
+                arr[p.x][p.y] = 2;
                 puntos nextP = new puntos(p.x,p.y-1, p);
                 q.add(nextP);
             }
