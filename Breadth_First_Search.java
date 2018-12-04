@@ -104,11 +104,10 @@ public class Breadth_First_Search {
 /*********************************************************************************************/
     /************************************************************************************/
     
-    public static void main(String[] args) {
+    public static void set(int x, int y) {
 
-        puntos p = caminoBFS(0,0);/*Le damos el punto de partida */
+        puntos p = caminoBFS(x,y);/*Le damos el punto de partida */
 
-        /*imprime la matriz con la búsqueda que realizo para encontrar el final, siendo 1 el espacio recorrido */
          for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 System.out.print(arr[i][j]);
