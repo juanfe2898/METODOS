@@ -104,9 +104,11 @@ public class Breadth_First_Search {
 /*********************************************************************************************/
     /************************************************************************************/
     
-    public static void set(int x, int y,int[][] maze) {
+    public static void set(int xini, int yini, int xfin, int yfin,int[][] maze) {
         arr= maze;
-        puntos p = caminoBFS(x,y);/*Le damos el punto de partida */
+        arr[xfin][yfin]=9;
+        puntos p = caminoBFS(xini,yini);/*Le damos el punto de partida */
+        
         
          for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
